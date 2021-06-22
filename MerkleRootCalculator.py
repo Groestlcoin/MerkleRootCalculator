@@ -26,15 +26,15 @@ def merkleCalculator(hashList):
     return merkleCalculator(newHashList)
 
 # Demo :
-# https://blockexplorer.com/block/000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506
-print('Expected MerkleRoot :   f3e94742aca4b5ef85488dc37c06c3282295ffec960994b2c0d5ac2a25a95766')
+# https://chainz.cryptoid.info/grs/block.dws?3641180.htm
+print('Expected MerkleRoot :   8efa9b8d755ea7dfa4a964bc58ee3b176eb382363ff99da9e7144922a73d82b8')
 
-# Transaction Hashes of block #100000
+# Transaction Hashes of block #3641180
 txHashes = [
-    '8c14f0db3df150123e6f3dbbf30f8b955a8249b62ac1d1ff16284aefa3d06d87',
-    'fff2525b8931402dd09222c50775608f75787bd2b87e56995a7bdd30f79702c4',
-    '6359f0868171b1d194cbee1af2f16ea598ae8fad666d9b012c8ed2b79a236ec4',
-    'e9a66845e05d5abc0ad04ec80f774a7e585c6e8db975962d069a522137b80c1d'
+    '48df5c1c348813adc57e41498e7879153ec4b0d1651c14e8e2f64f056a60cf4d',
+    'fbe27eedf04b69ab8191410451093f463ec67a23d231b504269adffbe0d23ee83',
+    'f7942734fc960da59c7a7375ca3464664565adbc0fbe86a72708d8cb1031c525',
+    '70fab1507f663e1c736a67e6085bfb6ca457f39a8b268e45511b28acc2a2bafa'
 ]   
 
 CalculatedMerkleRoot = str(merkleCalculator(txHashes), 'utf-8')
